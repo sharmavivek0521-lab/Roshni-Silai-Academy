@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshni Silai & Fashion Academy | Best Sewing & Tailoring Classes</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-rose-50/30 text-gray-800">
+
+    <!-- Header / Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-rose-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-rose-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-md">
+                        <i class="fa-solid fa-[#f43f5e] fa-scissors"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold text-gray-900 block leading-tight">Roshni Silai</span>
+                        <span class="text-xs text-rose-600 font-semibold tracking-wider uppercase block">& Fashion Academy</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+                    <a href="#home" class="hover:text-rose-600 transition">Home</a>
+                    <a href="#about" class="hover:text-rose-600 transition">About Us</a>
+                    <a href="#courses" class="hover:text-rose-600 transition">Courses</a>
+                    <a href="#services" class="hover:text-rose-600 transition">Stitching Services</a>
+                    <a href="#gallery" class="hover:text-rose-600 transition">Gallery</a>
+                    <a href="#contact" class="hover:text-rose-600 transition">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-rose-600 hover:bg-rose-700 text-white font-medium px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition">
+                        Admission Open
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-600 focus:outline-none text-2xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-rose-100 px-4 pt-2 pb-4 space-y-3">
+            <a href="#home" class="block text-gray-600 hover:text-rose-600">Home</a>
+            <a href="#about" class="block text-gray-600 hover:text-rose-600">About Us</a>
+            <a href="#courses" class="block text-gray-600 hover:text-rose-600">Courses</a>
+            <a href="#services" class="block text-gray-600 hover:text-rose-600">Stitching Services</a>
+            <a href="#gallery" class="block text-gray-600 hover:text-rose-600">Gallery</a>
+            <a href="#contact" class="block text-gray-600 hover:text-rose-600">Contact</a>
+            <a href="#contact" class="block text-center bg-rose-600 text-white py-2 rounded-lg font-medium">Admission Open</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-16 md:py-24 bg-gradient-to-br from-rose-100/50 via-white to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block bg-rose-100 text-rose-700 font-semibold text-xs px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+                    ISO Certified Training Center
+                </span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Apne Hathon Ko Do <span class="text-rose-600">Hunar Ki Roshni</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Professional Silai aur Fashion Designing sikhein. Apne ghar se hi boutique shuru karein ya fashion industry mein aage badhein.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#courses" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-center px-6 py-3.5 rounded-xl shadow-lg hover:shadow-rose-300/50 transition">
+                        Explore Courses
+                    </a>
+                    <a href="https://wa.me/919876543210?text=Hello%20Roshni%20Academy,%20I%20want%20to%20know%20more%20about%20courses" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-center px-6 py-3.5 rounded-xl shadow-lg hover:shadow-emerald-200 transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Inquiry
+                    </a>
+                </div>
+                <!-- Trust Badges -->
+                <div class="mt-10 pt-6 border-t border-gray-200/60 grid grid-cols-3 gap-4 text-center">
+                    <div>
+                        <p class="text-2xl font-bold text-gray-900">500+</p>
+                        <p class="text-xs text-gray-500">Students Trained</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-gray-900">100%</p>
+                        <p class="text-xs text-gray-500">Practical Classes</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-gray-900">Govt.</p>
+                        <p class="text-xs text-gray-500">Certificate Provided</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-full h-80 md:h-[420px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=800&auto=format&fit=crop" alt="Fashion Designing Studio" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl hidden sm:flex items-center gap-3 border border-gray-100">
+                    <div class="bg-rose-100 p-3 rounded-lg text-rose-600">
+                        <i class="fa-solid fa-award text-2xl"></i>
+                    </div>
+                    <div>
+                        <p class="font-bold text-gray-800 text-sm">Best Boutique Academy</p>
+                        <p class="text-xs text-gray-500">Excellence Award Winner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">Hamare Baare Mein</h2>
+                <div class="w-16 h-1 bg-rose-600 mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-600">Hum mahilao aur students ko swavalambi (independent) banane ke liye best quality tailoring & fashion designing education dete hain.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-rose-50/50 p-6 rounded-2xl border border-rose-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-rose-600 text-white rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Expert Trainers</h3>
+                    <p class="text-gray-600 text-sm">10+ saal ke experience wale fashion designers se sikhein perfect cutting aur stitching techniques.</p>
+                </div>
+                <div class="bg-purple-50/50 p-6 rounded-2xl border border-purple-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-purple-600 text-white rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Flexible Timings</h3>
+                    <p class="text-gray-600 text-sm">Morning aur Afternoon batches available. Apne time ke according class chunie.</p>
+                </div>
+                <div class="bg-amber-50/50 p-6 rounded-2xl border border-amber-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-600 text-white rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Boutique Setup Support</h3>
+                    <p class="text-gray-600 text-sm">Course ke baad apna khud ka boutique ya silai centre kaise kholein, iski poori guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Offered -->
+    <section id="courses" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">Silai & Designing Courses</h2>
+                <div class="w-16 h-1 bg-rose-600 mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-600">Basic se lekar Advanced boutique level tak sab kuch sikhein.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Course 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition flex flex-col">
+                    <div class="p-6 flex-1">
+                        <span class="bg-rose-100 text-rose-700 text-xs font-semibold px-2.5 py-1 rounded">Duration: 3 Months</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-4 mb-2">Basic Sewing Course</h3>
+                        <p class="text-gray-600 text-sm mb-4">Begineers ke liye best course. Silai machine chalane se lekar basic kapdon ki cutting tak.</p>
+                        <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-rose-600 mr-2"></i>Simple Suit & Salwar</li>
+                            <li><i class="fa-solid fa-check text-rose-600 mr-2"></i>Petticoat & Simple Blouse</li>
+                            <li><i class="fa-solid fa-check text-rose-600 mr-2"></i>Machine Maintenance</li>
+                        </ul>
+                    </div>
+                    <div class="px-6 py-4 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                        <span class="font-bold text-gray-900 text-lg">₹1,200 <span class="text-xs font-normal text-gray-500">/month</span></span>
+                        <a href="#contact" class="text-rose-600 font-semibold text-sm hover:underline">Enroll Now &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="bg-white rounded-2xl shadow-md border-2 border-rose-500 overflow-hidden hover:shadow-xl transition flex flex-col relative">
+                    <div class="bg-rose-500 text-white text-center text-xs font-bold py-1 uppercase tracking-wider">Most Popular</div>
+                    <div class="p-6 flex-1">
+                        <span class="bg-purple-100 text-purple-700 text-xs font-semibold px-2.5 py-1 rounded">Duration: 6 Months</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-4 mb-2">Advance Fashion Designing</h3>
+                        <p class="text-gray-600 text-sm mb-4">Designer kapde silne aur professional finishing seekhne ke liye perfect course.</p>
+                        <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-rose-600 mr-2"></i>Designer Blouses (Sabyasachi, Padded)</li>
+                            <li><i class="fa-solid fa-check text-rose-600 mr-2"></i>Anarkali, Sharara & Lehenga</li>
+                            <li><i class="fa-solid fa-check text-rose-600 mr-2"></i>Drafting & Pattern Making</li>
+                        </ul>
+                    </div>
+                    <div class="px-6 py-4 bg-rose-50 border-t border-rose-100 flex justify-between items-center">
+                        <span class="font-bold text-gray-900 text-lg">₹2,000 <span class="text-xs font-normal text-gray-500">/month</span></span>
+                        <a href="#contact" class="bg-rose-600 text-white font-semibold text-sm px-4 py-2 rounded-lg hover:bg-rose-700">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition flex flex-col">
+                    <div class="p-6 flex-1">
+                        <span class="bg-amber-100 text-amber-700 text-xs font-semibold px-2.5 py-1 rounded">Duration: 1 Month</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-4 mb-2">Boutique Management</h3>
+                        <p class="text-gray-600 text-sm mb-4">Apna boutique business grow karne aur customer management seekhne ke liye.</p>
+                        <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-rose-600 mr-2"></i>Client Measurement & Fitting</li>
+                            <li><i class="fa-solid fa-check text-rose-600 mr-2"></i>Fabric Selection & Pricing</li>
+                            <li><i class="fa-solid fa-check text-rose-600 mr-2"></i>Social Media Marketing</li>
+                        </ul>
+                    </div>
+                    <div class="px-6 py-4 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                        <span class="font-bold text-gray-900 text-lg">₹3,500 <span class="text-xs font-normal text-gray-500">Full Course</span></span>
+                        <a href="#contact" class="text-rose-600 font-semibold text-sm hover:underline">Enroll Now &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stitching Services & Rates -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">Custom Stitching Services</h2>
+                <div class="w-16 h-1 bg-rose-600 mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-600">Perfect fitting aur latest design ke sath kapde silwaiye.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-rose-50/30 rounded-2xl p-6 border border-rose-100 shadow-sm">
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 flex justify-between items-center">
+                        <div>
+                            <p class="font-bold text-gray-800">Simple Kurti / Suit</p>
+                            <p class="text-xs text-gray-500">Basic Stitching</p>
+                        </div>
+                        <span class="font-bold text-rose-600">₹250 se shuru</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 flex justify-between items-center">
+                        <div>
+                            <p class="font-bold text-gray-800">Padded / Designer Blouse</p>
+                            <p class="text-xs text-gray-500">Latest Neck & Back Designs</p>
+                        </div>
+                        <span class="font-bold text-rose-600">₹450 se shuru</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 flex justify-between items-center">
+                        <div>
+                            <p class="font-bold text-gray-800">Anarkali / Palazzo Suit</p>
+                            <p class="text-xs text-gray-500">Designer Flare</p>
+                        </div>
+                        <span class="font-bold text-rose-600">₹600 se shuru</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 flex justify-between items-center">
+                        <div>
+                            <p class="font-bold text-gray-800">Lehenga & Choli Stitching</p>
+                            <p class="text-xs text-gray-500">Heavy Bridal / Partywear</p>
+                        </div>
+                        <span class="font-bold text-rose-600">₹1,200 se shuru</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">Our Work & Gallery</h2>
+                <div class="w-16 h-1 bg-rose-600 mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-600">Hamare students aur boutique ka karya.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="h-60 rounded-xl overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=500&auto=format&fit=crop" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="h-60 rounded-xl overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?q=80&w=500&auto=format&fit=crop" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="h-60 rounded-xl overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1537832816519-689ad163238b?q=80&w=500&auto=format&fit=crop" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="h-60 rounded-xl overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=500&auto=format&fit=crop" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Sampark Karein</h2>
+                    <p class="text-gray-600 mb-6">Kisi bhi jaankari ya admission ke liye humein call karein ya centre par aayein.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-rose-100 text-rose-600 rounded-lg flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-800">Address</p>
+                                <p class="text-sm text-gray-600">Main Market Road, Near City Bus Stand, [Aapke Shahar Ka Naam]</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-rose-100 text-rose-600 rounded-lg flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-800">Phone Number</p>
+                                <p class="text-sm text-gray-600">+91 98765 43210</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-rose-100 text-rose-600 rounded-lg flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-800">Timing</p>
+                                <p class="text-sm text-gray-600">Somwar se Shanivar: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div class="bg-rose-50/40 p-8 rounded-2xl border border-rose-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Inquiry Form</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Aapka Naam</label>
+                            <input type="text" placeholder="Naam likhein" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-rose-500 bg-white">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Mobile Number</label>
+                            <input type="tel" placeholder="Mobile number likhein" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-rose-500 bg-white">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Kis cheez ke liye inquiry hai?</label>
+                            <select class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-rose-500 bg-white">
+                                <option>Silai Course (Training)</option>
+                                <option>Stitching Order (Kapde Silwai)</option>
+                                <option>Dono</option>
+                            </select>
+                        </div>
+                        <button type="button" onclick="alert('Inquiry Submitted! Hum aapko jaldi contact karenge.')" class="w-full bg-rose-600 hover:bg-rose-700 text-white font-bold py-3 rounded-xl shadow-md transition">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm mb-2">&copy; 2026 Roshni Silai & Fashion Academy. All Rights Reserved.</p>
+            <p class="text-xs text-gray-500">Designed with ❤ for Empowering Women</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210?text=Hello!%20I%20have%20an%20inquiry%20about%20Roshni%20Silai%20Academy." target="_blank" class="fixed bottom-6 right-6 bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-emerald-600 transition z-50 animate-bounce">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Mobile Menu JS Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
